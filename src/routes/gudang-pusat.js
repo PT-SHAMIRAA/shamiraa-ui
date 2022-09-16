@@ -26,8 +26,8 @@ module.exports = [
     //     }
     // },
     {
-        route: 'bts-tb-bbp',
-        name: 'bts-tb-bbp',
+        route: 'shm-tb-bbp',
+        name: 'shm-tb-bbp',
         moduleId: './modules/shm-tb-bbp-cr/index',
         nav: true,
         title: 'Pemasukan Barang',
@@ -76,8 +76,8 @@ module.exports = [
         }
     },
     {
-        route: 'bts-kb-exp',
-        name: 'bts-kb-exp',
+        route: 'shm-kb-exp',
+        name: 'shm-kb-exp',
         moduleId: './modules/shm-kb-exp-cr/index',
         nav: true,
         title: 'Distribusi Barang ke Ekspedisi',
@@ -89,8 +89,8 @@ module.exports = [
         }
     },
     {
-        route: 'bts-kb-rtu',
-        name: 'bts-kb-rtu',
+        route: 'shm-kb-rtu',
+        name: 'shm-kb-rtu',
         moduleId: './modules/shm-kb-rtu-cr/index',
         nav: true,
         title: 'Retur Barang Ke Unit',

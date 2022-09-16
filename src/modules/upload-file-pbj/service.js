@@ -18,7 +18,7 @@ export class Service extends RestService {
 
   getModuleConfig() {
     var config = Container.instance.get(Config);
-    var endpoint = config.getEndpoint("master").client.baseUrl + 'modules?keyword=bts-PK/PLB';
+    var endpoint = config.getEndpoint("master").client.baseUrl + 'modules?keyword=shm-PK/PLB';
     return super.get(endpoint);
   }
 

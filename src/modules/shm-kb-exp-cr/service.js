@@ -5,7 +5,7 @@ import { Container } from 'aurelia-dependency-injection';
 import { Config } from "aurelia-api"
 
 //const serviceUri = 'docs/shm-kb-exp';
-const serviceUri = 'bts-kb-exp';
+const serviceUri = 'shm-kb-exp';
 const servicePrintUri = 'docs/print/shm-kb-exp';
 
 export class Service extends RestService {
@@ -38,7 +38,7 @@ export class Service extends RestService {
   }
 
   getModuleConfig() {
-    // var endpoint = require('../../host').core + '/modules?keyword=bts-KB/EXB';
+    // var endpoint = require('../../host').core + '/modules?keyword=shm-KB/EXB';
     return super.get(endpoint)
       .then(results => {
         if (results && results.length == 1)

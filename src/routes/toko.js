@@ -9,8 +9,8 @@ module.exports = [
         settings: { roles: ["*"] }
     },
     {
-        route: 'bts-tb-bbt',
-        name: 'bts-tb-bbt',
+        route: 'shm-tb-bbt',
+        name: 'shm-tb-bbt',
         moduleId: './modules/shm-tb-bbt-cr/index',
         nav: true,
         title: 'Pemasukan Barang',
@@ -22,8 +22,8 @@ module.exports = [
         }
     },
     // {
-    //     route: 'bts-tb-bat',
-    //     name: 'bts-tb-bat',
+    //     route: 'shm-tb-bat',
+    //     name: 'shm-tb-bat',
     //     moduleId: './modules/shm-tb-bat-cr/index',
     //     nav: true,
     //     title: 'Pemasukan Embalase',
@@ -35,8 +35,8 @@ module.exports = [
     //     }
     // },
     {
-        route: 'bts-kb-rtp',
-        name: 'bts-kb-rtp',
+        route: 'shm-kb-rtp',
+        name: 'shm-kb-rtp',
         moduleId: './modules/shm-kb-rtp-cr/index',
         nav: true,
         title: 'Retur Barang Ke Pusat',
@@ -48,8 +48,8 @@ module.exports = [
         }
     },
     {
-        route: 'bts-kb-rtt',
-        name: 'bts-kb-rtt',
+        route: 'shm-kb-rtt',
+        name: 'shm-kb-rtt',
         moduleId: './modules/shm-kb-rtt-cr/index',
         nav: true,
         title: 'Transfer Stok',
