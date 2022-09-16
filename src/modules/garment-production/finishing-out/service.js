@@ -79,7 +79,7 @@ class Service extends RestService {
     }
 
     getDestinations() {
-        var module = 'BTS-PK/PBJ';
+        var module = 'shm-PK/PBJ';
         var config = Container.instance.get(Config);
         var endpoint = config.getEndpoint("master");
         var uri = `master/storages/destination?keyword=${module}`;
@@ -87,7 +87,7 @@ class Service extends RestService {
     }
     
     getSources() {
-        var module = 'BTS-PK/PBJ';
+        var module = 'shm-PK/PBJ';
         var config = Container.instance.get(Config);
         var endpoint = config.getEndpoint("master");
         var uri = `master/storages/source?keyword=${module}`;

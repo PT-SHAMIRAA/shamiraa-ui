@@ -49,7 +49,7 @@ export class Service extends RestService {
 
   getModuleConfig() {
     var config = Container.instance.get(Config);
-    var endpoint = config.getEndpoint("master").client.baseUrl + 'modules?keyword=bts-KB/RTP';
+    var endpoint = config.getEndpoint("master").client.baseUrl + 'modules?keyword=shm-KB/RTP';
     return super.get(endpoint);
   }
 
