@@ -26,7 +26,7 @@ export class Service extends RestService {
 
   getAllRttByFilter(dateFrom, dateTo, status) {
     var config = Container.instance.get(Config);
-    var endpoint = config.getEndpoint("inventory").client.baseUrl + 'docs/shm-kb-rtt/' + dateFrom + "/" + dateTo + "/" + status;
+    var endpoint = config.getEndpoint("inventory").client.baseUrl + 'docs/als-kb-rtt/' + dateFrom + "/" + dateTo + "/" + status;
     return super.get(endpoint);
   }
 
@@ -37,7 +37,7 @@ export class Service extends RestService {
 
   getSPKByReference(codeRTT) {
     var config = Container.instance.get(Config);
-    var endpoint = config.getEndpoint("merchandiser").client.baseUrl + 'docs/shm-pk/rtt?reference=' + codeRTT;
+    var endpoint = config.getEndpoint("merchandiser").client.baseUrl + 'docs/als-pk/rtt?reference=' + codeRTT;
     return super.get(endpoint);
   }
 

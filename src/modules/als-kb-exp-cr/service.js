@@ -4,9 +4,9 @@ import { RestService } from '../../utils/rest-service';
 import { Container } from 'aurelia-dependency-injection';
 import { Config } from "aurelia-api"
 
-//const serviceUri = 'docs/shm-kb-exp';
-const serviceUri = 'shm-kb-exp';
-const servicePrintUri = 'docs/print/shm-kb-exp';
+//const serviceUri = 'docs/als-kb-exp';
+const serviceUri = 'als-kb-exp';
+const servicePrintUri = 'docs/print/als-kb-exp';
 
 export class Service extends RestService {
 
@@ -38,7 +38,7 @@ export class Service extends RestService {
   }
 
   getModuleConfig() {
-    // var endpoint = require('../../host').core + '/modules?keyword=shm-KB/EXB';
+    // var endpoint = require('../../host').core + '/modules?keyword=als-KB/EXB';
     return super.get(endpoint)
       .then(results => {
         if (results && results.length == 1)
