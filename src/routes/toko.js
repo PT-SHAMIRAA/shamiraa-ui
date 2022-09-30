@@ -9,9 +9,9 @@ module.exports = [
         settings: { roles: ["*"] }
     },
     {
-        route: 'shm-tb-bbt',
-        name: 'shm-tb-bbt',
-        moduleId: './modules/shm-tb-bbt-cr/index',
+        route: 'als-tb-bbt',
+        name: 'als-tb-bbt',
+        moduleId: './modules/als-tb-bbt-cr/index',
         nav: true,
         title: 'Pemasukan Barang',
         auth: true,
@@ -22,9 +22,9 @@ module.exports = [
         }
     },
     // {
-    //     route: 'shm-tb-bat',
-    //     name: 'shm-tb-bat',
-    //     moduleId: './modules/shm-tb-bat-cr/index',
+    //     route: 'als-tb-bat',
+    //     name: 'als-tb-bat',
+    //     moduleId: './modules/als-tb-bat-cr/index',
     //     nav: true,
     //     title: 'Pemasukan Embalase',
     //     auth: true,
@@ -35,9 +35,9 @@ module.exports = [
     //     }
     // },
     {
-        route: 'shm-kb-rtp',
-        name: 'shm-kb-rtp',
-        moduleId: './modules/shm-kb-rtp-cr/index',
+        route: 'als-kb-rtp',
+        name: 'als-kb-rtp',
+        moduleId: './modules/als-kb-rtp-cr/index',
         nav: true,
         title: 'Retur Barang Ke Pusat',
         auth: true,
@@ -48,9 +48,9 @@ module.exports = [
         }
     },
     {
-        route: 'shm-kb-rtt',
-        name: 'shm-kb-rtt',
-        moduleId: './modules/shm-kb-rtt-cr/index',
+        route: 'als-kb-rtt',
+        name: 'als-kb-rtt',
+        moduleId: './modules/als-kb-rtt-cr/index',
         nav: true,
         title: 'Transfer Stok',
         auth: true,
