@@ -2,10 +2,9 @@ import { inject, Lazy } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
 import { RestService } from '../../utils/rest-service';
 
-//const serviceUri = '/docs/als-tb-bbp'; 
-const serviceUriTransferIn = 'transfer-in';
-const serviceUriSPK = 'pkpbj/by-user'
-const serviceUriSPKPending = 'pkpbj/by-user/packingRTP'
+//const serviceUri = '/docs/shm-tb-bbt';
+const serviceUri = 'stores/shm-tb-bbt';
+const serviceSpkUri = 'pkpbj/by-user';
 const serviceUriStorages = '/storages';
 
 export class Service extends RestService {
@@ -15,27 +14,27 @@ export class Service extends RestService {
     }
 
     search(info) {
-        var endpoint = `${serviceUriTransferIn}`
+        var endpoint = `${serviceUri}`
         return super.list(endpoint, info);
     }
 
     getById(id) {
-        var endpoint = `${serviceUriTransferIn}/${id}`;
+        var endpoint = `${serviceUri}/${id}`;
         return super.get(endpoint);
     }
 
     create(data) {
-        var endpoint = `${serviceUriTransferIn}`;
+        var endpoint = `${serviceUri}`;
         return super.post(endpoint, data);
     }
 
     listPending(info) {
-        var endpoint = `${serviceUriSPKPending}`;
+        var endpoint = `${serviceUri}/pendingStore`;
         return super.list(endpoint, info);
     }
 
     getPendingSPKById(id) {
-        var endpoint = `${serviceUriSPK}/${id}`;
+        var endpoint = `${serviceSpkUri}/${id}`;
         return super.get(endpoint);
     }
 
