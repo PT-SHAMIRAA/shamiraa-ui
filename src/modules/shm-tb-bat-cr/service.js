@@ -2,8 +2,8 @@ import {inject, Lazy} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
 import {RestService} from '../../utils/rest-service';
   
-const serviceUri = '/docs/als-tb-bat';
-const serviceOutUri = '/docs/als-tb-bat';
+const serviceUri = '/docs/shm-tb-bat';
+const serviceOutUri = '/docs/shm-tb-bat';
 const serviceUriStorages= '/storages';
  
 export class Service extends RestService{

@@ -14,6 +14,7 @@ export class DataForm {
     dataSource = {};
     sources = [];
     destinations = [];
+    
     item;
     barcode;
     qtyFg;
@@ -163,9 +164,12 @@ export class DataForm {
           return source;
         })
 
-        //  this.service.getExpeditionServices().then(result => {
-        //    this.expeditionServices = result;
-        //  })
+         this.service.getExpeditionServices().then(result => {
+          console.log(result[0]); 
+          //this.expeditionServices = result[0];
+          this.data.expeditionService = result[0];
+         })
+          
     }
 
     async barcodeChoose(e) {
