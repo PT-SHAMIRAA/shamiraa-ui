@@ -9,6 +9,7 @@ var nmerchandiserRoutes = require("./nmerchandiser");
 var finishingRoutes = require("./finishing");
 var generalInventoryRoutes = require("./general-inventory");
 var shamiraaRoutes = require("./shamiraa-report");
+var merchandiserRoutes=require("./merchandiser");
 
 export default [].concat(
   nmasterRoutes,
@@ -19,5 +20,6 @@ export default [].concat(
   laporanRoutes,
   authRoutes,
   generalInventoryRoutes,
-  shamiraaRoutes
+  shamiraaRoutes,
+  merchandiserRoutes
 );
