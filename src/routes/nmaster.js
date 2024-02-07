@@ -328,4 +328,17 @@ module.exports = [
     iconClass: ""
   }
 },
+{
+  route: "sizes",
+  name: "sizes",
+  moduleId: "./modules/master/size/index",
+  nav: true,
+  title: "Size",
+  auth: true,
+  settings: {
+    group: "nmaster",
+    permission: {"C.01": 1 },
+    iconClass: ""
+  }
+},
 ];
