@@ -238,8 +238,10 @@ export class Upload {
 
     @bindable imageUpload;
     @bindable imageSrc;
+    @bindable imageFileInput;
     imageUploadChanged(newValue) {
       let imageInput = document.getElementById("imageInput");
+      this.imageFileInput=imageInput.files[0];
       let reader = new FileReader();
       reader.onload = event => {
         let base64Image = event.target.result;
@@ -292,6 +294,12 @@ export class Upload {
         }
         if (this.data.color == "" || this.data.color == undefined) {
             e["color"] = "Nama Warna harus diisi"
+        }
+        if(this.imageFileInput){
+            var imageSize = this.imageFileInput.size * 0.75 / 1024; // calculate image size in KB
+            if (imageSize > 1024) {
+                e["imageUpload"] = "Image size should be less than 1MB";
+            }
         }
 
         if (Object.keys(e).length > 0) {
